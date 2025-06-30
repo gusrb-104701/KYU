@@ -18,10 +18,9 @@ import glob
 
 # CSV 파일 경로
 base_dir = r"C:\Users\gusrb\Desktop\WGS 실험 DATA" #경로저장
-csv_folder_path = os.path.join(base_dir, '*.csv')
+csv_folder_path = os.path.join(base_dir, '*.csv') #위 두 값을 결합해서 폴더 경로 + 파일 패턴만들기
 output_folder = os.path.join(base_dir, 'for radical')
 os.makedirs(output_folder, exist_ok=True)  # Create the output folder if it does
-
 
 
 
