@@ -7,17 +7,17 @@ Created on Thu Oct 20 15:56:18 2022
 
 # Process 후 channel별 나누어져 있는 파일들을 하나로 통합
 
-import numpy as np
-import pandas as pd
+import numpy as np #계산을 위한 모듈
+import pandas as pd #데이터프레임 모듈
 
-from tqdm import tqdm
-import matplotlib.pyplot as plt
+from tqdm import tqdm # 진행률을 보여주는 모듈
+import matplotlib.pyplot as plt # 시각화 모듈
 
-import os
+import os # 디렉토리 만들기, 경로 붙이기, 현재 위치 가져오기 등
 
-from glob import glob
+from glob import glob # 경로찾기 모듈
 
-os.chdir(os.getcwd())
+os.chdir(os.getcwd()) #작업 directory 변경, 현재 directory를 문자열로 반환
 
 path_dict_list = glob(r'C:/Users/gusrb/Desktop/WGS 실험 DATA/20270704 Ar 110, Pressure 50, Source or Bias 200/*')
 #현재 디렉토리에 있는 Exmple에 있는 모든 폴더에 대해 적용
@@ -54,12 +54,12 @@ for p in tqdm(path_dict_list):
 
     file_name = glob(p +'/*.csv') 
     # p가 Example 안 모든폴더를 지정하고 그 안 디렉토리(/)의 모든이름(*)의 .csv파일에 대해 적용합니다
-    
+    # 해당 조건을 만족하는 항목들에 대해 list 형식으로 저장
 
     print("file name")
     print(file_name)
     
-    file = {}
+    file = {} # 빈 dictionary 생성 ex)이름으로 전화번호 및 주소찾기
     N = len(file_name) #file name 길이저장
     n=0
     Nm = len(idx_wavelengths) #wavelengths 길이저장
