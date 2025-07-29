@@ -19,7 +19,7 @@ from glob import glob # 경로찾기 모듈
 
 os.chdir(os.getcwd()) #작업 directory 변경, 현재 directory를 문자열로 반환
 
-path_dict_list = glob(r'C:/Users/gusrb/Desktop/WGS 실험 DATA/20270704 Ar 110, Pressure 50, Source or Bias 200/*')
+path_dict_list = glob(r'C:\Users\gusrb\Desktop\WGS 실험 DATA\20250725 Ar 110, Pressure 50, Source or Bias Torque 분할\*')
 #현재 디렉토리에 있는 Exmple에 있는 모든 폴더에 대해 적용
 
 print("경로확인")
