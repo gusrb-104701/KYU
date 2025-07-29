@@ -57,8 +57,8 @@ for idx, file in enumerate(filenames):
     df.columns = new_columns
 
     # 750.49 / 751.47 리스트 구분  > 파장 selection후 수정작업 필요
-    cols_750 = [col for col in df.columns if '811.59' in col] #ppt에 정리한 파장기준으로 다시 뽑아봐야함
-    cols_751 = [col for col in df.columns if '750.49' in col]
+    cols_750 = [col for col in df.columns if '778.02' in col] #ppt에 정리한 파장기준으로 다시 뽑아봐야함
+    cols_751 = [col for col in df.columns if '306.72' in col]
 
     # 예외 처리
     if len(cols_750) != len(cols_751):
