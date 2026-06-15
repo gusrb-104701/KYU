@@ -19,7 +19,7 @@ from glob import glob # 경로찾기 모듈
 
 os.chdir(os.getcwd()) #작업 directory 변경, 현재 directory를 문자열로 반환
 
-path_dict_list = glob(r'C:\Users\gusrb\Desktop\WGS 실험 DATA\20250725 Ar 110, Pressure 50, Source or Bias Torque 분할\*')
+path_dict_list = glob(r'C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250909 Source 1200W bias 5W VI_Source 1200W bias 250W fail\20250909\1200W Bias 250W 불량유발\*')
 #현재 디렉토리에 있는 Exmple에 있는 모든 폴더에 대해 적용
 
 print("경로확인")
@@ -64,6 +64,8 @@ for p in tqdm(path_dict_list):
     n=0
     Nm = len(idx_wavelengths) #wavelengths 길이저장
     m = 1
+    
+
     for f in file_name:
         
         if n==0:

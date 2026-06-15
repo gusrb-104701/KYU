@@ -68,10 +68,10 @@ def plot_comparative_channelwise_spectra_precise(file_dict):
 
 # ✅ 사용 예시
 file_dict = {
-    "1 Torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 1torque test2.csv",
-    "5 Torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 5torque test2.csv",
-    "10 Torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 10torque test2.csv",
-    "15 Torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 15torque test2.csv"
+    "1 Torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250808 분석 data\Ar 110 Source 300 integration time10 total\Ar 110 Source 300 integration time10 01_4.csv",
+    "5 Torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250808 분석 data\Ar 110 Source 300 integration time10 total\Ar 110 Source 300 integration time10 05_4.csv",
+    "10 Torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250808 분석 data\Ar 110 Source 300 integration time10 total\Ar 110 Source 300 integration time10 10_4.csv",
+    "15 Torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250808 분석 data\Ar 110 Source 300 integration time10 total\Ar 110 Source 300 integration time10 15_4.csv"
 }
 
 plot_comparative_channelwise_spectra_precise(file_dict)

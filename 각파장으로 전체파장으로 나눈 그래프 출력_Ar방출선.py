@@ -75,9 +75,10 @@ def plot_known_ar_lines(file_dict: Dict[str, str],
 
 # 3️⃣ 사용자 PC 환경에 맞는 CSV 경로 설정
 file_paths = {
-    "5torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20270704 Ar 110, Pressure 50, Source or Bias 200\20250704 Bias Test 5_1\20250704-140935_1.csv",
-    "10torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20270704 Ar 110, Pressure 50, Source or Bias 200\20250704 Bias Test10_1\20250704-134104_1.csv",
-    "15torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20270704 Ar 110, Pressure 50, Source or Bias 200\20250704 Bias Test 15_1\20250704-114048_1.csv"
+    "1torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250808 분석 data\Ar 110 Source 1200 integration time10 total\Ar 110 Source 1200 integration time10 01_1.csv",
+    "5torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250808 분석 data\Ar 110 Source 1200 integration time10 total\Ar 110 Source 1200 integration time10 05_1.csv",
+    "10torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250808 분석 data\Ar 110 Source 1200 integration time10 total\Ar 110 Source 1200 integration time10 10_1.csv",
+    "15torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250808 분석 data\Ar 110 Source 1200 integration time10 total\Ar 110 Source 1200 integration time10 15_1.csv"
 }
 
 # 4️⃣ 실행

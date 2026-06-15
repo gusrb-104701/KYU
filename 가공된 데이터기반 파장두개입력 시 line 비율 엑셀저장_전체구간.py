@@ -16,23 +16,32 @@ import numpy as np
 # ===================== 🔧 1. 설정 =====================
 file_sets = {
     "Source Test1": {
-        "5torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250704 분석data\20250704 Source Test 05_1.csv",
-        "10torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250704 분석data\20250704 Source Test 10_1.csv",
-        "15torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250704 분석data\20250704 Source Test 15_1.csv",
+        "1torque": r"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 1torque test1.csv",
+        "5torque": r"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 5torque test1.csv",
+        "10torque": r"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 10torque test1.csv",
+        "15torque": r"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 15torque test1.csv",
     },
     "Source Test2": {
-        "5torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250704 분석data\20250704 Source Test 05_2.csv",
-        "10torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250704 분석data\20250704 Source Test 10_2.csv",
-        "15torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250704 분석data\20250704 Source Test 15_2.csv",
+        "1torque": r"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 1torque test2.csv",
+        "5torque": r"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 5torque test2.csv",
+        "10torque": r"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 10torque test2.csv",
+        "15torque": r"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 15torque test2.csv",
     },
     "Source Test3": {
-        "5torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250704 분석data\20250704 Source Test 05_3.csv",
-        "10torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250704 분석data\20250704 Source Test 10_3.csv",
-        "15torque": r"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250704 분석data\20250704 Source Test 15_3.csv",
+        "1torque": r"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 1torque test3.csv",
+        "5torque": r"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 5torque test3.csv",
+        "10torque": r"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 10torque test3.csv",
+        "15torque": r"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 15torque test3.csv",
+    },
+    "Source Test4": {
+        "1torque": r"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 1torque test4.csv",
+        "5torque": r"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 5torque test4.csv",
+        "10torque": r"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 10torque test4.csv",
+        "15torque": r"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\Ar Source 15torque test4.csv",
     },
 }
 
-numerator_wavelength = 696.76 #분자입력
+numerator_wavelength = 750.49 #분자입력
 denominator_wavelength = 811.59 #분모입력
 
 
@@ -96,7 +105,7 @@ for group_name, file_group in file_sets.items():
     final_df = pd.concat([final_df, header, df], ignore_index=True)
 
 # 저장
-output_path = fr"C:\Users\gusrb\Desktop\WGS 실험 DATA\20250704 분석data\{numerator_wavelength}_{denominator_wavelength}OES_Ratio_Summary_Vertical.xlsx"
+output_path = fr"C:\Users\gusrb\OneDrive\Desktop\WGS 실험 DATA\20250725 분석data\{numerator_wavelength}_{denominator_wavelength}OES_Ratio_Summary_Vertical.xlsx"
 with pd.ExcelWriter(output_path, engine='xlsxwriter') as writer:
     final_df.to_excel(writer, index=False, sheet_name="Summary")
 

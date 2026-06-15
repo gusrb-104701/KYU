@@ -14,9 +14,10 @@ import numpy as np
 
 # 1️⃣ 조건별 파일 경로 설정 (파일 경로만 바꾸면 바로 실행 가능!)
 files_info = {
-    '5 Torque':  r'C:\Users\gusrb\Desktop\WGS 실험 DATA\20250612 sample test, Center Edge Test\120_5torque Edge_trend확인\141017\20250530-141017_8.csv',
-    '10 Torque':  r'C:\Users\gusrb\Desktop\WGS 실험 DATA\20250612 sample test, Center Edge Test\121 10torque edge_trend확인\142722\20250530-142722_8.csv',
-    '15 Torque': r'C:\Users\gusrb\Desktop\WGS 실험 DATA\20250612 sample test, Center Edge Test\122 15torque edge_trend확인\143651\20250530-143651_8.csv'
+    '1 Torque': r'C:\Users\gusrb\Desktop\WGS 실험 DATA\20250808 Ar 110, Source 1200, 300 , integration time 10\Ar 110 Source 1200 integration time10\Ar 110 Source 1200 integration time10 01_1\20250808-133827_1.csv',
+    '5 Torque': r'C:\Users\gusrb\Desktop\WGS 실험 DATA\20250808 Ar 110, Source 1200, 300 , integration time 10\Ar 110 Source 1200 integration time10\Ar 110 Source 1200 integration time10 05_1\20250808-130905_1.csv',
+    '10 Torque': r'C:\Users\gusrb\Desktop\WGS 실험 DATA\20250808 Ar 110, Source 1200, 300 , integration time 10\Ar 110 Source 1200 integration time10\Ar 110 Source 1200 integration time10 10_1\20250808-124151_1.csv',
+    '15 Torque': r'C:\Users\gusrb\Desktop\WGS 실험 DATA\20250808 Ar 110, Source 1200, 300 , integration time 10\Ar 110 Source 1200 integration time10\Ar 110 Source 1200 integration time10 15_1\20250808-121526_1.csv'
 }
 
 skip_header = 5
